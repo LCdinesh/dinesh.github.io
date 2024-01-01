@@ -106,9 +106,9 @@ function sendEmail(email, name, phone, subject, message) {
   // document.getElementById('loader').style.visibility = 'visible'
 	Email.send({
 	Host: "smtp.gmail.com",
-	Username : 'dineshlamxne@gmail.com',
-	Password : '9864422857Dddd*',
-	To : 'dineshlamxne@gmail.com',
+	Username : 'lamichhanedinesh.com.np@gmail.com',
+	Password : '9864422857Dd',
+	To : 'lamichhanedinesh.com.np@gmail.com',
 	From : email,
 	Subject : subject,
 	Body : "From:"+name+'<br>'+"Phone No:"+phone+'<br>'+message,
