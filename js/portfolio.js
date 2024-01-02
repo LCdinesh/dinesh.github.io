@@ -111,7 +111,7 @@ function sendEmail(email, name, phone, subject, message) {
 	To : 'lamichhanedinesh.com.np@gmail.com',
 	From : 'lamichhanedinesh.com.np@gmail.com',
 	Subject : subject,
-	Body : "From:"+name+'<br>'+"Phone No:"+phone+'<br>'+message,
+	Body : "From:"+name+'<br>'+"Phone No:"+phone+'<br>'+"Email:"+email+'<br>'+message,
 	}).then(
 		message => {
       alert(message)
