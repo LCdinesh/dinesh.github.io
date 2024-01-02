@@ -109,7 +109,7 @@ function sendEmail(email, name, phone, subject, message) {
 	Username : 'lamichhanedinesh.com.np@gmail.com',
 	Password : '169312988C13935134545F6B03085D0D1057',
 	To : 'lamichhanedinesh.com.np@gmail.com',
-	From : email,
+	From : 'lamichhanedinesh.com.np@gmail.com',
 	Subject : subject,
 	Body : "From:"+name+'<br>'+"Phone No:"+phone+'<br>'+message,
 	}).then(
