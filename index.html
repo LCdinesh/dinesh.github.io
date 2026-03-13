@@ -1,326 +1,796 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="/css/portfolio.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="/js/portfolio.js"></script> 
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinesh Lamichhane</title>
-</head>
-<body style="width: 100%;">
-<section class="body">
-       
-      <!---Home-->
-      <div class="home" id="home">
-        <div id="particles-js"></div> 
-        <div class="main-info">
-        <h2 data-aos="fade-down"> Hi, I am Dinesh Lamichhane</h2>
-        <div class="more-info" data-aos="fade-left">
-        <div class="second-info white-text">
-         <div class="second-info-item">
-          <h5>Geomatics Engineer</h5>
-        </div>
-        </div>
-      </div>
-        </div>
-    </div>
+    <link rel="icon" href="Images/DP.JPG" type="image/x-icon" />
 
-    <!--About Me-->
-    
-    <div class='about' id="about">
-      <div class='about-right' data-aos="fade-right">
-          <div class="right-clip"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">DL</span>
+          <span>Dinesh Lamichhane</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+          ☰
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
+          <!-- <a href="#publications">Publications</a> -->
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class='about-left' data-aos="fade-left">
-        <div>  
-        <div class="title">
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <div class="container hero-layout">
+          <div class="hero-image-card reveal delay-1">
+            <div class="profile-image-wrap">
+              <img
+                src="Images/DP.JPG"
+                alt="Dinesh Lamichhane"
+                class="profile-image"
+              />
+            </div>
+            <div class="hero-image-info">
+              <h3>Dinesh Lamichhane</h3>
+              <p id="typing-text">GIS Professional</p>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <span class="eyebrow">
+              GIS | Spatial Data Analysis | Remote Sensing | Drone Mapping |
+              Cartography | Surveyor
+            </span>
+
+            <h1>
+              Building geospatial solutions for
+              <span class="accent-text">real-world impact</span>.
+            </h1>
+
+            <p class="lead">
+              I am Dinesh Lamichhane, a geospatial professional specializing in
+              GIS, remote sensing, drone-based mapping, and geospatial data
+              analysis. My work focuses on applying advanced spatial
+              technologies to support disaster risk management, infrastructure
+              planning, environmental monitoring, and sustainable development.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a href="certifications.html" class="btn btn-secondary"
+                >View Certifications</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="container about-achievement-layout">
+          <div class="about-block">
+            <div class="section-head">
+              <div>
                 <h2>About Me</h2>
+                <p>
+                  I am a Geomatics Engineer with advanced expertise in
+                  Geographic Information Systems (GIS), remote sensing,
+                  drone-based mapping, and geospatial surveying. My work
+                  combines spatial data analysis, field-based surveying, and
+                  geospatial visualization to develop practical solutions for
+                  real-world challenges.
+                </p>
+                <p>
+                  I have contributed to projects related to disaster risk
+                  assessment, humanitarian mapping, infrastructure planning,
+                  tourism mapping, and land use analysis. By integrating
+                  satellite imagery, UAV data, GNSS surveys, and spatial
+                  modeling, I transform complex geospatial datasets into clear
+                  insights that support planning, resilience, and sustainable
+                  development.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-side-card">
+            <h3 class="achievement-side-title">My Achievements</h3>
+
+            <div class="achievement-side-grid">
+              <div class="achievement-side-item">
+                <strong class="counter" data-target="4">0</strong>
+                <span>Years of Experience</span>
+              </div>
+
+              <div class="achievement-side-item">
+                <strong class="counter" data-target="19">0</strong>
+                <span>Projects Completed</span>
+              </div>
+
+              <div class="achievement-side-item">
+                <strong class="counter" data-target="3">0</strong>
+                <span>Ongoing Projects</span>
+              </div>
+
+              <div class="achievement-side-item">
+                <strong class="counter" data-target="4">0</strong>
+                <span>Awards Won</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="left-desc white-text">
-          <p>I am a Geomatics Engineer with over two years of hands-on experience in Geographic Information Systems (GIS), OpenStreetMap (OSM), and various geospatial fields. My skill set encompasses proficiency in GIS, mapping, UAV (drone) technologies, data analysis & processing, OSM contributions, remote sensing, and surveying.</p>
+      </section>
+
+      <section class="section reveal" id="education">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Educational Journey</h2>
+            </div>
+          </div>
+
+          <div class="info-grid">
+            <a href="https://www.jsu.edu/" target="_blank" class="card-link">
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>Jacksonville State University</h3>
+                  <p>
+                    <strong
+                      >Master’s Degree in Geographic Information Sciences and
+                      Technology</strong
+                    ><br />
+                    2025 – Present<br />
+                    Jacksonville, Alabama
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              href="https://ioepas.edu.np/"
+              target="_blank"
+              class="card-link"
+            >
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>IOE Pashchimanchal Campus, Tribhuvan University</h3>
+                  <p>
+                    <strong>Bachelor’s Degree in Geomatics Engineering</strong
+                    ><br />
+                    2017 – 2022<br />
+                    Pokhara, Nepal
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
         </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Work Experience</h2>
+            </div>
+          </div>
+
+          <div class="info-grid">
+            <a href="https://www.jsu.edu/" target="_blank" class="card-link">
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>Graduate Teaching Assistant</h3>
+                  <p>
+                    <strong>Jacksonville State University</strong><br />
+                    Aug 2025 – Present<br />
+                    Supporting academic and technical work related to GIS and
+                    geospatial learning.
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a href="https://naxa.com.np/" target="_blank" class="card-link">
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>GIS Officer</h3>
+                  <p>
+                    <strong>NAXA</strong><br />
+                    Mar 2024 – Jul 2025<br />
+                    Worked on geospatial analysis, mapping, development
+                    projects, and planning support.
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a href="https://ihrr.org.np/" target="_blank" class="card-link">
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>GIS Specialist (Consultant)</h3>
+                  <p>
+                    <strong>IHRR</strong><br />
+                    Aug 2024 – Nov 2024<br />
+                    Contributed to GIS-based project work, technical support,
+                    and mapping-related consulting.
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a
+              href="https://flyinglabs.org/nepal"
+              target="_blank"
+              class="card-link"
+            >
+              <article class="info-card">
+                <div class="info-card-content">
+                  <h3>GIS & Drone Data Officer</h3>
+                  <p>
+                    <strong>Nepal Flying Labs</strong><br />
+                    Mar 2022 – Feb 2024<br />
+                    Led drone-based mapping, image processing, field
+                    coordination, and disaster workflows.
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
         </div>
+      </section>
+<!-- AARDS & ACHIEVEMENTS -->
+      <section class="section reveal" id="awards">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Awards & Achievements</h2>
+              <p>
+                Recognitions and milestones from my academic and professional
+                journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="awards-grid">
+            <article class="award-card">
+              <a
+                href="Images/Awards/Drone-based aerial mapping of landslide.png"
+                target="_blank"
+                class="card-link"
+              >
+                <div class="award-icon">🏆</div>
+                <h3>Esri StoryMaps Competition 2024</h3>
+                <p>Winner – Humanitarian and Disaster Response Category</p>
+              </a>
+            </article>
+
+            <article class="award-card">
+              <div class="award-icon">🥈</div>
+              <h3>University-Level Mapping Competition</h3>
+              <p>
+                First Runner-Up – IOE Pashchimanchal Campus, Tribhuvan
+                University
+              </p>
+            </article>
+
+            <article class="award-card">
+              <div class="award-icon">🎓</div>
+              <h3>Academic Scholarship Recipient</h3>
+              <p>
+                Awarded merit-based scholarship during Bachelor’s Degree in
+                Geomatics Engineering
+              </p>
+            </article>
+
+            <article class="award-card">
+              <div class="award-icon">📌</div>
+              <h3>Poster Presentation Competition</h3>
+              <p>
+                First Runner-Up – IOE Pashchimanchal Campus, Tribhuvan
+                University
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
+<!-- PROJE3CTS -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Featured Projects</h2>
+              <p>A few selected projects from my portfolio.</p>
+            </div>
+            <div class="section-actions">
+              <a href="projects.html" class="btn btn-secondary"
+                >View All Projects</a
+              >
+            </div>
+          </div>
+
+          <div class="preview-grid">
+            <article class="preview-card tilt-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Projects/Migration Atlas of Nepal.png"
+                  alt="Migration Atlas of Nepal – Spatial Analysis of Internal and International Migration Patterns"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">
+                  Migration Atlas of Nepal – Spatial Analysis of Internal and
+                  International Migration Patterns
+                </h3>
+                <p class="preview-desc">
+                  Analyzed migration patterns across Nepal using spatial data
+                  and demographic datasets to develop an interactive migration
+                  atlas supporting policy planning and regional development
+                  analysis.
+                </p>
+              </div>
+            </article>
+
+            <article class="preview-card tilt-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Projects/GIS-Based Cell Tower Planning and Network Enhancement - HEXAGIS.png"
+                  alt="GIS-Based Cell Tower Planning and Network Enhancement - HEXAGIS"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">
+                  GIS-Based Cell Tower Planning and Network Enhancement -
+                  HEXAGIS
+                </h3>
+                <p class="preview-desc">
+                  Conducted GIS-based spatial analysis for cell tower planning
+                  in Malaysia to identify optimal locations and improve network
+                  coverage and performance.
+                </p>
+              </div>
+            </article>
+
+            <article class="preview-card tilt-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Projects/Final Khumai Dada.jpg"
+                  alt="Khumai Dada Trekking Route – 3D Terrain Visualization and Trail Mappingn"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">
+                  Khumai Dada Trekking Route – 3D Terrain Visualization and Trail Mapping
+                </h3>
+                <p class="preview-desc">
+                  Created a detailed cartographic visualization of the Khumai Dada trekking route near Pokhara, Nepal, integrating GIS-based terrain modeling and spatial analysis. The map highlights key trekking stops, elevation points, and terrain features to support route planning and tourism awareness.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+<!-- certifications -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Featured Certifications</h2>
+              <p>A few certifications and learning highlights.</p>
+            </div>
+            <div class="section-actions">
+              <a href="certifications.html" class="btn btn-secondary"
+                >View All Certifications</a
+              >
+            </div>
+          </div>
+
+          <div class="preview-grid">
+            <article class="preview-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Certificates/Sediment Transport with HEC-RAS.png"
+                  alt="On-demand: Sediment Transport with HEC-RAS"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">
+                  On-demand: Sediment Transport with HEC-RAS
+                </h3>
+                <p class="preview-desc">Australian Water School</p>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Certificates/Foundations of Global Navigation Satellite Systems.png"
+                  alt="Foundations of Global Navigation Satellite Systems"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">
+                  Foundations of Global Navigation Satellite Systems
+                </h3>
+                <p class="preview-desc">
+                  University Corporation for Atmospheric Researchers
+                </p>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <div class="preview-image">
+                <img
+                  src="Images/Certificates/Cartography.png"
+                  alt="Cartography"
+                  class="card-image"
+                />
+              </div>
+              <div class="preview-content">
+                <h3 class="preview-title">Cartography</h3>
+                <p class="preview-desc">Issued by Esri</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="storymaps">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>StoryMaps Prepared</h2>
+        <p>
+          Selected story-driven geospatial works combining maps, narrative,
+          and visual communication.
+        </p>
+      </div>
     </div>
 
-    <!--What i can do-->
-    <div class="service white-text">
-    <h2 class="title">Service I Provide</h2>
-    <div class="capability" id="capability">
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/Cartography.png"/>
-          </div>
-          <div class="ability-name">Cartographer</div>
-          <div class="ability-desc">Expert Cartographer with a proven track record in creating accurate and visually appealing maps. Successfully led diverse cartography projects, showcasing proficiency in map design, data interpretation, and spatial analysis.</div>
-        </div>
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/uav.png"/>
-          </div>
-          <div class="ability-name">UAV Operator</div>
-          <div class="ability-desc">Proven UAV (Unmanned Aerial Vehicle) Operator with expertise in aerial data collection. Led drone-based projects for mapping, surveying, and monitoring purposes, showcasing proficiency in flight operations and data acquisition.</div>
-        </div>
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/Data_Processing.png"/>
-          </div>
-          <div class="ability-name">Data Analysis and Processing</div>
-          <div class="ability-desc">Data Analysis and Processing Specialist with a focus on spatial analysis, drone data analysis, and drone image processing. Demonstrated expertise in processing drone-collected data and images, contributing to the success of diverse geospatial projects.</div>
-        </div>
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/surveying.png"/>
-          </div>
-          <div class="ability-name">Geospatial Surveying</div>
-          <div class="ability-desc">Experienced Geospatial Surveyor adept at utilizing advanced surveying equipment and technologies. Led multiple surveying initiatives, demonstrating strong analytical skills and attention to detail in capturing precise geospatial data.</div>
-        </div>
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/OSM.png"/>
-          </div>
-          <div class="ability-name">OpenStreetMap</div>
-          <div class="ability-desc">OpenStreetMap specialist contributing significantly to the OpenStreetMap community and leveraged the platform for various mapping projects, highlighting a commitment to open-source mapping initiatives.</div>
-        </div>
-        <div class="each-ability" data-aos="flip-right">
-          <div class="ability-logo">
-            <img src="/images/land.png"/>
-          </div>
-          <div class="ability-name">Land Use Classification/Planning</div>
-          <div class="ability-desc">Land Use Classification and Planning Expert, skilled in analyzing land data to inform urban planning decisions.Successfully executed projects involving land use classification, zoning analysis, and development planning.
-           </div>
-        </div>
-    </div>
-    </div>
+    <div class="storymaps-slider-wrap">
+      <button class="storymaps-nav prev" id="storymaps-prev" aria-label="Previous StoryMaps">
+        ‹
+      </button>
 
-    <!--Skills-->
-    <div class="skill">
-     <h2 class="title">Skills</h2>
-     <div class="skill-desc white-text">
-       <div class="skill-left" data-aos="fade-right">
-        <div class="skill-title">Mapping Skills</div>
-        <div class="skill-list">
-          <div class="each-skill">
-            <div class="skill-name">GIS/Cartography</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: #59b256;"></div>
+      <div class="storymaps-slider" id="storymaps-slider">
+        <article class="storymap-card">
+          <a href="https://arcg.is/1XbLG40" target="_blank" class="card-link">
+            <div class="storymap-image">
+              <img src="Images/Story Maps/Drone-Based Aerial Mapping of Landslide.png" alt="Drone-Based Aerial Mapping of Landslide" class="card-image" />
             </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">Remote Sensing</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #59b256;"></div>
+            <div class="storymap-content">
+              <h3 class="storymap-title">Drone-Based Aerial Mapping of Landslide</h3>
             </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">Photogrammetry</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">Land Use Planning</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">OpenStreetMap</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background-color: #59b256;"></div>
-            </div>
-          </div>
-        </div>
-       </div>
-       <div class="skill-right" data-aos="fade-left">
-        <div class="skill-title">Coding Skills</div>
-        <div class="skill-list">
-          <div class="each-skill">
-            <div class="skill-name">CMarkdown</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">Python</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 40%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">C</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">C++</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background-color: #59b256;"></div>
-            </div>
-          </div>
-          <div class="each-skill">
-            <div class="skill-name">Java</div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background-color: #59b256;"></div>
-            </div>
-          </div>
-        </div>
-       </div>
-     </div>
-    </div>
+          </a>
+        </article>
 
-      <!--my tools-->
-      <div class="tools" id="tools">
-          <h2 class="title">My Tools</h2>
-          <div class="technology">
-            <a href="https://pro.arcgis.com/en/pro-app/latest/get-started/get-started.htm" class="logo" target="_blank" data-aos="flip-up"><img src="/images/arcgispro.png" alt="img"/></a>
-            <a href="https://gisgeography.com/what-is-arcgis/" class="logo" target="_blank" data-aos="flip-left"><img src="/images/ArcGISDesktop.png" alt="img"/></a>
-            <a href="https://www.arcgis.com/home/index.html" class="logo" target="_blank" data-aos="flip-down"><img src="/images/arcgisonline-logo.png" alt="img"/></a>
-            <a href="https://storymaps.arcgis.com/" class="logo" target="_blank" data-aos="flip-right"><img src="/images/StoryMapsLogo.png" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/Google_Earth" class="logo" target="_blank" data-aos="flip-up"><img src="/images/Google_Earth.png" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/QGIS" class="logo" target="_blank" data-aos="flip-left"><img src="/images/qgis.png" alt="img"/></a>
-            <a href="https://www.openstreetmap.org/#map=10/28.2103/83.9853" class="logo" target="_blank" data-aos="flip-down"><img src="/images/osm1.png" alt="img"/></a>
-            <a href="https://josm.openstreetmap.de/" class="logo" target="_blank" data-aos="flip-down"><img src="/images/JOSM.png" alt="img"/></a>
-            <a href="https://www.pix4d.com/" class="logo" target="_blank" data-aos="flip-down"><img src="/images/pix4d.png" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/Metashape" class="logo" target="_blank" data-aos="flip-down"><img src="/images/agisoft.jpg" alt="img"/></a>
-            <a href="https://www.opendronemap.org/webodm/" class="logo" target="_blank" data-aos="flip-up"><img src="/images/odm.png" alt="img"/></a>
-            <a href="https://www.dronedeploy.com/" class="logo" target="_blank" data-aos="flip-left"><img src="/images/dronedeploy.png" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/AutoCAD" class="logo" target="_blank" data-aos="flip-down"><img src="/images/autocad.png" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/SketchUp" class="logo" target="_blank" data-aos="flip-right"><img src="/images/sketchup.jpg" alt="img"/></a>
-            <a href="https://en.wikipedia.org/wiki/Blender_(software)" class="logo" target="_blank" data-aos="flip-up"><img src="/images/blender.png" alt="img"/></a>
-            <a href="https://www.postgresql.org/" class="logo" target="_blank" data-aos="flip-left"><img src="/images/sql.png" alt="img"/></a>
-            <a href="https://www.adobe.com/products/aftereffects.html" class="logo" target="_blank" data-aos="flip-down"><img src="/images/ae.png" alt="img"/></a>
-            <a href="https://www.adobe.com/products/illustrator.html" class="logo" target="_blank" data-aos="flip-down"><img src="/images/illustrator.png" alt="img"/></a>
-          </div>
-    </div>
+        <article class="storymap-card">
+          <a href="https://arcg.is/qTjX51" target="_blank" class="card-link">
+            <div class="storymap-image">
+              <img src="Images/Story Maps/In the shadow of a Volcano.png" alt="In the Shadow of a Volcano" class="card-image" />
+            </div>
+            <div class="storymap-content">
+              <h3 class="storymap-title">In the Shadow of a Volcano</h3>
+            </div>
+          </a>
+        </article>
 
-    <!--More-->
-    <div class="achievement" id="achievement">
-     <h2 class="title">My Achievements</h2>
-    <div class="my-info" id="my-info">
-      <div class="each-info" data-aos="flip-up">
-        <h1>2</h1>
-        <h6>Years Of Experience</h6>
+        <article class="storymap-card">
+          <a href="https://arcg.is/19uib5" target="_blank" class="card-link">
+            <div class="storymap-image">
+              <img src="Images/Story Maps/Bioengineering Social Enterprise for Disaster Risk Reduction and Livelihood Upliftment.png" alt="Bioengineering Social Enterprise for Disaster Risk Reduction and Livelihood Upliftment" class="card-image" />
+            </div>
+            <div class="storymap-content">
+              <h3 class="storymap-title">Bioengineering Social Enterprise for Disaster Risk Reduction and Livelihood Upliftment</h3>
+            </div>
+          </a>
+        </article>
+
+         <article class="storymap-card">
+          <a href="https://arcg.is/0rj1Tz" target="_blank" class="card-link">
+            <div class="storymap-image">
+              <img src="Images/Story Maps/Drone Based Rapid Damage Assessment.png" alt="Drone Based Rapid Damage Assessment Western Nepal Earthquake 2023" class="card-image" />
+            </div>
+            <div class="storymap-content">
+              <h3 class="storymap-title">Drone Based Rapid Damage Assessment, Western Nepal Earthquake 2023</h3>
+            </div>
+          </a>
+        </article>
+
+        <article class="storymap-card">
+          <a href="https://arcg.is/1qeLmT1" target="_blank" class="card-link">
+            <div class="storymap-image">
+              <img src="Images/Story Maps/Drone Based Rapid Assessment of Melamchi Flood 2021.png" alt="Drone Based Rapid Assessment of Melamchi Flood 2021" class="card-image" />
+            </div>
+            <div class="storymap-content">
+              <h3 class="storymap-title">Drone Based Rapid Assessment of Melamchi Flood 2021</h3>
+            </div>
+          </a>
+        </article>
       </div>
-      <div class="each-info" data-aos="flip-up">
-        <h1>12</h1>
-        <h6>Project Completed</h6>
-      </div>
-      <div class="each-info" data-aos="flip-up">
-        <h1>4</h1>
-        <h6>Ongoing Projects</h6>
-      </div>
-      <div class="each-info" data-aos="flip-up">
-        <h1>4</h1>
-        <h6>Award won</h6>
-      </div>
+
+      <button class="storymaps-nav next" id="storymaps-next" aria-label="Next StoryMaps">
+        ›
+      </button>
     </div>
   </div>
-    <!--Contact me-->
-    <div class="contact" id="contact">
-    <div class="title">
-    <h2>Contact</h2>
-    <p>Love to hear from you</p>
-     </div>
-    <div class="contact-me" id="contact-me">
-      <div class="google-map">
-        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="My Location" 
-        src="//www.arcgis.com/apps/Embed/index.html?webmap=d2af0a80df384e5aae1956d702377f88&extent=83.9465,28.1884,83.9528,28.1916&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=false&disable_scroll=false&theme=light">
-      </iframe>
-    </div>
-      <div class="contact-form" id="contact-form">
-        <div>
-          <p id="sent_message" style="color:#59b256"></p>
-          </div>
-        <form  method="post"> 
-        <div class='row'>
-         <div class='col-sm-12 col-md-6 col-lg-12'>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="name" placeholder="Name">
-            <p id="name-error" style="color: red;"></p>
-          </div>
-         </div>
-         <div class='col-sm-12 col-md-6 col-lg-12'>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Email">
-            <p id="email-error" style="color: red;"></p>
-          </div>
-        </div>
-        <div class='col-sm-12 col-md-6 col-lg-12'>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="phone" placeholder="Phone No">
-            <p id="phone-error" style="color: red;"></p>
-          </div>  
-        </div>
-        <div class='col-sm-12 col-md-6 col-lg-12'>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="subject" placeholder="Subject">
-            <p id="subject-error" style="color: red;"></p>
-          </div> 
-        </div>
-        </div>  
-        <div class="mb-3">
-          <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
-          <p id="message-error" style="color: red;"></p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-success ml-auto" id='btn' onclick="Sendmail()">Submit</button>
-        </div>
-      </form> 
-      </div>
-    </div>
-    </div>
-
-    <!--footer-->
-    <div class="footer">
-      <div class="me">
-        <h5>Living, learning, and leveling up one day at a time.</h5>
-      </div>
-      <div class="social-media pr-5 pt-2 mr-auto">
-        <a class="white" href="https://www.facebook.com/dinesh.lamichhane.5623" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a class="white" href="https://www.linkedin.com/in/dinesh-lamichhane-501475238/ " target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a class="white" href="https://twitter.com/LC_dnsh" target="_blank"><i class="fa fa-twitter" ></i></a>
-        <a class="white" href="https://www.instagram.com/dinesh_lamxne/" target="_blank"><i class="fa fa-instagram" ></i></a>
-      </div>
-      <div class="me">
-        <h5>Made with <a class="red"><i class="fa fa-heart"></i></a> by me &copy; <span id="date"></span></h5>
-      </div>
-    </div>
-
 </section>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<script>
-  $('.carousel').carousel()
-</script>
-<script src="/particles.js"></script>
-<script>
-  function myMap() {
-  var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-  };
-  var map = new google.maps.Map(document.getElementById("google-map"),mapProp);
-  }
-  </script>
-  
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-</body>
+
+      <!-- <section class="section reveal" id="publications">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Publications & Papers</h2>
+              <p>Research papers, technical writeups, and scholarly outputs.</p>
+            </div>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <div class="info-card-content">
+                <h3>Paper Title / Publication Title</h3>
+                <p>
+                  <strong>Journal / Conference Name</strong><br />
+                  Year<br />
+                  Add your paper title, co-authors, journal name, and link here.
+                </p>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <div class="info-card-content">
+                <h3>Technical Report / Research Work</h3>
+                <p>
+                  <strong>Organization / Institution</strong><br />
+                  Year<br />
+                  Add your technical report, article, or ongoing publication
+                  details here.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section reveal" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Skills</h2>
+            </div>
+          </div>
+
+          <div class="skills-progress-grid">
+            <div class="skills-column">
+              <h3 class="skills-subtitle">Mapping Skills</h3>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>GIS / Cartography</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Remote Sensing</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Photogrammetry</span>
+                  <span>86%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 86%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Land Use Planning</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 82%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>OpenStreetMap</span>
+                  <span>72%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 72%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-column">
+              <h3 class="skills-subtitle">Coding Skills</h3>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Python</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>R</span>
+                  <span>58%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 58%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>C</span>
+                  <span>42%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 42%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>C++</span>
+                  <span>45%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 45%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>JavaScript</span>
+                  <span>35%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-map-card reveal">
+          <h3>Find Me</h3>
+          <p>Jacksonville, Alabama, USA</p>
+
+          <div class="map-embed">
+            <iframe
+              title="My Location"
+              src="https://www.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=d2af0a80df384e5aae1956d702377f88&theme=light&share=true&extent=-9548911.845976278,4003475.3828693563,-9546406.14464274,4004803.476235846,102100"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="footer-contact-card reveal delay-1">
+          <h3>Contact Me</h3>
+          <p>Send me a message directly from this portfolio.</p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-status" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1HYurDYqZ6/?mibextid=wwXIfr" target="_blank" class="social-icon">
+            <img src="https://img.freepik.com/premium-vector/facebook-app-icon-social-media-logo-vector-illustration-meta_277909-402.jpg?semt=ais_hybrid&w=740&q=80" alt="Facebook">
+          </a>
+                    
+          <a href="https://www.linkedin.com/in/dinesh-lamichhane-501475238/" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/color/1200/linkedin.jpg" alt="LinkedIn">
+          </a>
+
+          
+          <a href="https://www.instagram.com/dinesh_lamxne?igsh=eDFnaHE5Mzd6Ym0x&utm_source=qr" target="_blank" class="social-icon">
+            <img src="https://img.freepik.com/premium-vector/instagram-camera-logo_1273375-1272.jpg?semt=ais_rp_50_assets&w=740&q=80" alt="Instagram">
+          </a>
+
+          <a href="mailto:dineshlamxne@gmail.com" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/color/1200/gmail-new.jpg" alt="Email">
+          </a>
+        </div>
+        
+      <p class="footer-copy">
+        © 2026 Dinesh Lamichhane. All rights reserved.
+      </p>
+
+</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
