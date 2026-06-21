@@ -1436,7 +1436,7 @@ h1 {
   display: block;
 }
 .video-container {
-  width: 100%;
+  width: auto;
   overflow: hidden;
   border-radius: 12px;
   margin-top: 1rem;
