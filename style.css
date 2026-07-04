@@ -284,6 +284,10 @@ h1 {
   transition: 0.25s ease;
 }
 
+.btn-CV {
+  color: #000000;           /* Changed to white for better contrast */
+  background: linear-gradient(135deg, #98d5dd, #0fffff);
+}
 .btn-primary {
   color: #03111f;
   background: linear-gradient(135deg, #67e8f9, #38bdf8);
